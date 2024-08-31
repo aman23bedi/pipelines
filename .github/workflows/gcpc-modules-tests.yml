@@ -33,7 +33,10 @@ jobs:
           pip3 freeze
 
       - name: Install Wheel
-        run: pip3 install wheel==0.42.0
+        run: pip3 install wheel==0.42.0 
+      
+      - name: Install protobuf
+        run: pip3 install protobuf==4.25.3
       
       - name: Install python sdk 
         run: pip install sdk/python
